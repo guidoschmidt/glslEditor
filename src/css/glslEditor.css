@@ -42,6 +42,8 @@
 @import '_debugger';
 @import '_icons';
 
+@import "_document";
+
 /* VARIABLES */
 
 :root {
