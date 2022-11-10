@@ -7,8 +7,9 @@
     "dev:browser": "vite --config ./vite/vite.config.browser.ts --open",
     "build:browser": "vite build --config ./vite/vite.config.browser.ts",
     "dev:electron": "vite --config ./vite/vite.config.browser.ts",
-    "build:electron": "vite --config ./vite/vite.config.electron.ts",
-    "start": "electron .",
+    "build:electron": "vite build --config ./vite/vite.config.electron.ts",
+    "dev:lib": "vite --config ./vite/vite.config.lib.ts",
+    "build:lib": "vite build --config ./vite/vite.config.lib.ts",
     "lint": "eslint *.js src/"
   },
   "repository": {
