@@ -4,9 +4,8 @@ import { initEditor, focusAll } from "./core/Editor";
 
 import Menu from "./ui/Menu";
 import Helpers from "./ui/Helpers";
-import ErrorsDisplay from "./ui/ErrorsDisplay";
+import { ErrorsDisplay, ExportIcon } from "./ui";
 import VisualDebugger from "./ui/VisualDebugger";
-import ExportIcon from "./ui/ExportIcon";
 
 import FileDrop from "./io/FileDrop";
 import HashWatch from "./io/HashWatch";
@@ -50,7 +49,7 @@ void main() {
     gl_FragColor = vec4(color,1.0);
 }`;
 
-export default class GlslEditor {
+export class GlslEditor {
   constructor(selector, options) {
     this.createFontLink();
     subscribeMixin(this);
