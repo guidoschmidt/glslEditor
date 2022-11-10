@@ -5,13 +5,10 @@
   "main": "src/electron.js",
   "scripts": {
     "dev:browser": "vite --config ./vite/vite.config.browser.ts --open",
-    "build": "gulp",
-    "dev:electron": "vite --config ./vite/vite.config.electron.ts",
+    "build:browser": "vite build --config ./vite/vite.config.browser.ts",
+    "dev:electron": "vite --config ./vite/vite.config.browser.ts",
+    "build:electron": "vite --config ./vite/vite.config.electron.ts",
     "start": "electron .",
-    "package-local": "electron-packager . --out ./build --overwrite",
-    "package-all": "electron-packager . --out ./build --overwrite --all",
-    "postinstall": "ln -nsf ../src/js node_modules/app",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint *.js src/"
   },
   "repository": {

@@ -3,3 +3,4 @@
 node_modules/
 dist-electron/
 yarn.lock
+dist/
