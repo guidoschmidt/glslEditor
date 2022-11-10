@@ -7,5 +7,6 @@ export default defineConfig({
   plugins: [],
   build: {
     target: "esnext",
+    outDir: "./build/browser",
   },
 });

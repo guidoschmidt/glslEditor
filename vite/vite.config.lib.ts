@@ -6,8 +6,9 @@ export default defineConfig({
   plugins: [],
   build: {
     target: "esnext",
+    outDir: "./build/lib",
     lib: {
-      entry: resolve(__dirname, "../src/js/GlslEditor.js"),
+      entry: resolve(__dirname, "../src/js/GlslEditor.ts"),
       name: "glslEditor",
       fileName: "glslEditor.js",
     },
