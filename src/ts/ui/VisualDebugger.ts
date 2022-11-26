@@ -13,7 +13,7 @@ import { unfocusLine, focusLine, unfocusAll, focusAll } from "../core/Editor";
 var mainGE = {};
 var N_SAMPLES = 30;
 
-export default class VisualDebugger {
+export class VisualDebugger {
   constructor(main) {
     this.main = main;
     this.breakpoint = null;

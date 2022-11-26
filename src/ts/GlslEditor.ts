@@ -1,16 +1,8 @@
 import "document-register-element";
-import Shader from "./core/Shader";
-import { initEditor, focusAll } from "./core/Editor";
-
-import Menu from "./ui/Menu";
-import Helpers from "./ui/Helpers";
-import { ErrorsDisplay, ExportIcon } from "./ui";
-import VisualDebugger from "./ui/VisualDebugger";
-
-import FileDrop from "./io/FileDrop";
-import HashWatch from "./io/HashWatch";
-import BufferManager from "./io/BufferManager";
-import LocalStorage from "./io/LocalStorage";
+import { Shader } from "./core/Shader";
+import { initEditor, focusAll } from "./core";
+import { ErrorsDisplay, ExportIcon, Helpers, Menu, VisualDebugger } from "./ui";
+import { LocalStorage, FileDrop, HashWatch, BufferManager } from "./io";
 const STORAGE_LAST_EDITOR_CONTENT = "last-content";
 
 // Import Utils

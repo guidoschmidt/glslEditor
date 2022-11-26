@@ -1,4 +1,4 @@
-import ExportModal from "./modals/ExportModal";
+import { ExportModal } from "./modals/ExportModal";
 import type { GlslEditor } from "../GlslEditor";
 
 export class ExportIcon {
